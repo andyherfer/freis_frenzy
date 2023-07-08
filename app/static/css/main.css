@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#wordZone {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #4B0082;
+}
+
+/* Centered the buttons using display: flex on the parent container */
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* or center if you want them close */
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ee2200;
+}
+
+button:active {
+    background-color: #aa1e00;
+}
+
+/* Responsive style for tablets */
+@media (max-width: 768px) {
+    #wordZone {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 7px 15px;
+    }
+}
+
+/* Responsive style for mobile phones */
+@media (max-width: 480px) {
+    #wordZone {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+}

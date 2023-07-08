@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Game</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+</head>
+
+<body>
+  <div class="game-container">
+    <div id="wordZone">Let's play!</div>
+    <div class="btn-container">
+      <button id="nextWordButton" class="next-btn" onclick="nextWord()" hidden>Next Word</button>
+      <button id="startButton">Start</button>
+    </div>
+    <audio id="pingSound" src="https://alba-iconos.s3.us-west-2.amazonaws.com/Chiflido.mp3" type="audio/mpeg"
+      preload="auto"></audio>
+    <audio id="timesupSound" src="https://alba-iconos.s3.us-west-2.amazonaws.com/chango.mp3" type="audio/mpeg"
+      preload="auto"></audio>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
